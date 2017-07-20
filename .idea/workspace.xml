@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4000b5c-6a21-41d9-97e8-8858e1b3eba1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/food/models.py" afterPath="$PROJECT_DIR$/food/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/food/templates/food/index.html" afterPath="$PROJECT_DIR$/food/templates/food/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/food/urls.py" afterPath="$PROJECT_DIR$/food/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/food/views.py" afterPath="$PROJECT_DIR$/food/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/settings.py" afterPath="$PROJECT_DIR$/mysite/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,7 +16,7 @@
     <favorites_list name="mysite" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.7614213">
+    <splitter split-orientation="vertical" split-proportion="0.50862944">
       <split-first>
         <leaf>
           <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
@@ -89,7 +83,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="addFood.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="addFood.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/food/templates/food/addFood.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="68">
@@ -99,7 +93,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/food/templates/food/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="442">
@@ -143,7 +137,7 @@
           <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/food/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="6">
+                <state relative-caret-position="86">
                   <caret line="51" column="10" lean-forward="true" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
                   <folding>
                     <element signature="e#24#63#0" expanded="true" />
@@ -687,14 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/food/templates/food/addFood.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="28" column="62" lean-forward="true" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/food/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
@@ -712,6 +698,14 @@
           <folding>
             <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/food/templates/food/addFood.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="28" column="62" lean-forward="true" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
