@@ -6,14 +6,16 @@ from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.urls import reverse
 from django.views import generic
 
-from .models import Nutrient, NutrientGroup
+from .models import Meal, Nutrient, NutrientGroup
 
 
 class IndexView(generic.ListView):
     template_name = 'food/index.html'
-    context_object_name = 'nutrients_list'
+    context_object_name = 'meals_list'
+
     def get_queryset(self):
-        return Nutrient.objects.all()
+        return Meal.objects.all()
+
 
 class DetailView(generic.DetailView):
     model = Nutrient

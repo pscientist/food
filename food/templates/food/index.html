@@ -1,26 +1,54 @@
 <style>
-    h2 {
+    * {
         font-family: arial;
+        font-size: 14px;
+    }
+    h2 {
         font-size: 16px;
     }
     body {
         background-color: yellow
     }
     ul li, p, a {
-        font-family: arial;
-        font-size: 14px;
         line-height: 18px;
     }
+    td {
+        border: 1px solid green;
+        width: 35%;
+    }
+    table {
+        border: 1px solid green;
+    }
+
 </style>
 
-<h2> Nutritions </h2>
+<h2> Meal planner </h2>
 
-{% if nutrients_list %}
-    <ul>
-    {% for nutrient in nutrients_list %}
-        <li><a href="{% url 'food:detail' nutrient.id %}">{{ nutrient.name }}</a></li>
+<!--{% if nutrients_list %}-->
+    <!--<ul>-->
+    <!--{% for nutrient in nutrients_list %}-->
+        <!--<li><a href="{% url 'food:detail' nutrient.id %}">{{ nutrient.name }}</a>-->
+            <!--{{ nutrient.name }}-->
+        <!--</li>-->
+    <!--{% endfor %}-->
+    <!--</ul>-->
+<!--{% else %}-->
+    <!--<p>No nutrients are available.</p>-->
+<!--{% endif %}-->
+
+<table>
+    <tr><th>Today</th>
+    </tr>
+    {% for meal in meals_list %}
+        <tr>
+            <td>
+                {{ meal.name }}
+                <ul>
+                {% for f in meal.food.all %}
+                    <li>{{ f.name }} - {{ f.quantity }} {{ f.quantityUnit }}</li>
+                {% endfor %}
+                </ul>
+            </td>
+        </tr>
     {% endfor %}
-    </ul>
-{% else %}
-    <p>No nutrients are available.</p>
-{% endif %}
+</table>
