@@ -36,19 +36,31 @@
     <!--<p>No nutrients are available.</p>-->
 <!--{% endif %}-->
 
-<table>
-    <tr><th>Today</th>
+<table style="vertical-align: top;">
+    <tr><th colspan="2">Today</th>
     </tr>
     {% for meal in meals_list %}
         <tr>
             <td>
                 {{ meal.name }}
-                <ul>
-                {% for f in meal.food.all %}
-                    <li>{{ f.name }} - {{ f.quantity }} {{ f.quantityUnit }}</li>
+                <ul> <!-- many to many relationship set -->
+                {% for f in meal.mealfood_set.all %}
+                    <li>{{ f.food.name }} - {{ f.quantity }}{{ f.quantityUnit }}</li>
                 {% endfor %}
+                </ul>
+                <a href="{% url 'food:addFood' meal.id %}"> add food </a>
+            </td>
+            <td>
+                Nutritions
+                <ul>
+                    {% for f in meal.food.all %}
+                        {% for n in f.foodnutrient_set.all %}
+                            <li> {{ n.nutrient }} {{ n.quantity }} {{ n.quantityUnit }}</li>
+                        {% endfor %}
+                    {% endfor %}
                 </ul>
             </td>
         </tr>
     {% endfor %}
 </table>
+

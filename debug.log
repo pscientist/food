@@ -1,0 +1,14 @@
+"POST /food/1/addFood HTTP/1.1" 200 1629
+"GET /food/ HTTP/1.1" 200 3238
+"GET /food/1/addFood HTTP/1.1" 200 1660
+"GET /food/ HTTP/1.1" 200 3238
+"GET /food/1/addFood HTTP/1.1" 200 1660
+"GET /food/ HTTP/1.1" 200 3238
+"GET /food/1/addFood HTTP/1.1" 200 1660
+"POST /food/1/addFood HTTP/1.1" 200 1660
+"GET /food/ HTTP/1.1" 200 3565
+"GET /food/1/addFood HTTP/1.1" 200 1660
+"GET /food/ HTTP/1.1" 200 3565
+"GET /food/2/addFood HTTP/1.1" 200 1656
+"POST /food/2/addFood HTTP/1.1" 200 1656
+"GET /food/ HTTP/1.1" 200 3685

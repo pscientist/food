@@ -41,10 +41,11 @@ class Food(models.Model):
     calories = models.IntegerField(null=True, blank=True)
     kilojouls = models.IntegerField(null=True, blank=True)
     servingUnit = models.CharField(max_length=200, null=True, blank=True)
+    nutrition = models.ManyToManyField(Nutrient, through='FoodNutrient')
     def __str__(self):
         return self.name
 
-
+# relationship between food and nutrition
 class FoodNutrient(models.Model):
     food = models.ForeignKey('Food', null=True, blank=True)
     nutrient = models.ForeignKey('Nutrient', null=True, blank=True)
