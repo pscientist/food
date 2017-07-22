@@ -2,6 +2,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
+from django.core.urlresolvers import reverse
 
 class Nutrient(models.Model):
     name = models.CharField(max_length=200)
@@ -23,6 +24,9 @@ class Animal(models.Model):
     def __str__(self):
         return self.name
 
+    def get_absolute_url(self):
+        return reverse('food:animal-detail', kwargs={'pk':self.pk})
+
 
 class AnimalNutrient(models.Model):
     animal = models.ForeignKey('Animal')
@@ -42,6 +46,7 @@ class Food(models.Model):
     kilojouls = models.IntegerField(null=True, blank=True)
     servingUnit = models.CharField(max_length=200, null=True, blank=True)
     nutrition = models.ManyToManyField(Nutrient, through='FoodNutrient')
+    cost = models.FloatField(null=True, blank=True)
     def __str__(self):
         return self.name
 

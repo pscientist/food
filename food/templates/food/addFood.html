@@ -8,17 +8,19 @@
         font-size: 16px;
     }
     body {
-        background-color: yellow
+        background-color: #ccccff
     }
     ul li, p, a {
         line-height: 18px;
     }
-    td {
+    td, th {
         border: 1px solid green;
         width: 35%;
     }
     table {
         border: 1px solid green;
+        margin: 10px 20px;
+        width: 50%;
     }
 </style>
 
@@ -30,7 +32,7 @@
     {% csrf_token %}
 
     <table>
-        <tr> <td>Food</td>
+        <tr> <th>Food</th>
             <td>
                 <select name="food">
                 {% for food in food_list %}
@@ -39,17 +41,17 @@
                 </select>
             </td>
         </tr>
-        <tr><td>Quantity</td>
+        <tr><th>Quantity</th>
             <td>
             <input type="text" name="quantity"/>
             </td>
         </tr>
-        <tr><td>Unit</td>
+        <tr><th>Unit</th>
             <td>
             <input type="text" name="quantityUnit"/>
             </td>
         </tr>
-        <tr><td>&nbsp;</td>
+        <tr><th>&nbsp;</th>
             <td>
             <input type="submit" value="add"/>
             </td>

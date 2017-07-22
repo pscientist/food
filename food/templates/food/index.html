@@ -7,7 +7,7 @@
         font-size: 16px;
     }
     body {
-        background-color: yellow
+        background-color: #ccccff
     }
     ul li, p, a {
         line-height: 18px;
@@ -15,6 +15,8 @@
     td {
         border: 1px solid green;
         width: 35%;
+        vertical-align: top;
+        padding: 8px;
     }
     table {
         border: 1px solid green;
@@ -24,19 +26,11 @@
 
 <h2> Meal planner </h2>
 
-<!--{% if nutrients_list %}-->
-    <!--<ul>-->
-    <!--{% for nutrient in nutrients_list %}-->
-        <!--<li><a href="{% url 'food:detail' nutrient.id %}">{{ nutrient.name }}</a>-->
-            <!--{{ nutrient.name }}-->
-        <!--</li>-->
-    <!--{% endfor %}-->
-    <!--</ul>-->
-<!--{% else %}-->
-    <!--<p>No nutrients are available.</p>-->
-<!--{% endif %}-->
+<a href="https://www.bodybuilding.com/fun/fats_calculator.htm"/> calculator </a>
 
-<table style="vertical-align: top;">
+{{ context }}
+
+<table>
     <tr><th colspan="2">Today</th>
     </tr>
     {% for meal in meals_list %}
@@ -51,7 +45,6 @@
                 <a href="{% url 'food:addFood' meal.id %}"> add food </a>
             </td>
             <td>
-                Nutritions
                 <ul>
                     {% for f in meal.food.all %}
                         {% for n in f.foodnutrient_set.all %}
@@ -64,3 +57,4 @@
     {% endfor %}
 </table>
 
+<p><a href="{% url 'food:animal-add' %}">Add animal</a></p>

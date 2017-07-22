@@ -12,3 +12,329 @@
 "GET /food/2/addFood HTTP/1.1" 200 1656
 "POST /food/2/addFood HTTP/1.1" 200 1656
 "GET /food/ HTTP/1.1" 200 3685
+Internal Server Error: /food/
+Traceback (most recent call last):
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/response.py", line 82, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/response.py", line 64, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/loader.py", line 48, in select_template
+    return engine.get_template(template_name)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 56: 'totalCost', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+"GET /food/ HTTP/1.1" 500 126542
+Internal Server Error: /food/
+Traceback (most recent call last):
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/response.py", line 82, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/response.py", line 64, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/loader.py", line 48, in select_template
+    return engine.get_template(template_name)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 56: 'set', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+"GET /food/ HTTP/1.1" 500 126498
+Internal Server Error: /food/
+Traceback (most recent call last):
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/response.py", line 82, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/response.py", line 64, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/loader.py", line 48, in select_template
+    return engine.get_template(template_name)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 56: 'assign', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+"GET /food/ HTTP/1.1" 500 126540
+Internal Server Error: /food/
+Traceback (most recent call last):
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/response.py", line 82, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/response.py", line 64, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/loader.py", line 48, in select_template
+    return engine.get_template(template_name)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 56: 'totalCost', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+"GET /food/ HTTP/1.1" 500 126698
+Internal Server Error: /food/
+Traceback (most recent call last):
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/response.py", line 82, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/response.py", line 64, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/loader.py", line 48, in select_template
+    return engine.get_template(template_name)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 56: 'totalCost', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+"GET /food/ HTTP/1.1" 500 126698
+Internal Server Error: /food/
+Traceback (most recent call last):
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 1040, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 708, in resolve
+    obj = self.var.resolve(context)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 849, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/db/models/fields/related_descriptors.py", line 184, in __get__
+    rel_obj = self.get_object(instance)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/db/models/fields/related_descriptors.py", line 159, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/db/models/query.py", line 374, in get
+    num = len(clone)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/db/models/query.py", line 232, in __len__
+    self._fetch_all()
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/db/models/query.py", line 1118, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 886, in execute_sql
+    raise original_exception
+OperationalError: no such column: food_food.cost
+"GET /food/ HTTP/1.1" 500 177395
+"GET /food/ HTTP/1.1" 200 3685
+"GET /food/ HTTP/1.1" 200 3623
+"GET /food/1/addFood HTTP/1.1" 200 1660
+"GET /food/1/addFood HTTP/1.1" 200 1661
+"GET /food/1/addFood HTTP/1.1" 200 1706
+"GET /food/1/addFood HTTP/1.1" 200 1705
+"GET /food/1/addFood HTTP/1.1" 200 1708
+"GET /food/1/addFood HTTP/1.1" 200 1708
+"GET /food/1/addFood HTTP/1.1" 200 1708
+"GET /food/1/addFood HTTP/1.1" 200 1708
+"GET /food/1/addFood HTTP/1.1" 200 1712
+"GET /food/ HTTP/1.1" 200 3672
+"GET /food/animal/add/ HTTP/1.1" 200 722
+"POST /food/animal/add/ HTTP/1.1" 302 0
+"GET /food/animal/8/ HTTP/1.1" 200 762
+"GET /admin/ HTTP/1.1" 200 9194
+"GET /admin/food/animal/ HTTP/1.1" 200 5684
+"GET /admin/jsi18n/ HTTP/1.1" 200 3217
+"GET /admin/food/animal/8/change/ HTTP/1.1" 200 4641
+"GET /admin/jsi18n/ HTTP/1.1" 200 3217
+"GET /static/admin/img/tooltag-arrowright.svg HTTP/1.1" 200 280
+"GET /food/ HTTP/1.1" 200 3672
+"GET /food/3/addFood HTTP/1.1" 200 1709
+"GET /food/ HTTP/1.1" 200 3788
+"GET /food/ HTTP/1.1" 200 3933
+"GET /food/ HTTP/1.1" 200 3694
+"GET /food/ HTTP/1.1" 200 3559
+"GET /food/1/addFood HTTP/1.1" 200 1712
+"GET /food/ HTTP/1.1" 200 3559
+"GET /food/3/addFood HTTP/1.1" 200 1709
+"GET /food/ HTTP/1.1" 200 3559
+"GET /food/animal/add/ HTTP/1.1" 200 722
+"GET /admin/food/animal/ HTTP/1.1" 200 5684
+"GET /admin/jsi18n/ HTTP/1.1" 200 3217
+"GET /admin/food/ HTTP/1.1" 200 5040
+"GET /admin/food/animalnutrient/ HTTP/1.1" 200 4768
+"GET /admin/jsi18n/ HTTP/1.1" 200 3217
+"GET /admin/food/animalnutrient/3/change/ HTTP/1.1" 200 7633
+"GET /admin/jsi18n/ HTTP/1.1" 200 3217
+"GET /admin/food/animalnutrient/ HTTP/1.1" 200 4768
+"GET /admin/food/animalnutrient/add/ HTTP/1.1" 200 7374
+"GET /admin/jsi18n/ HTTP/1.1" 200 3217
+"POST /admin/food/animalnutrient/add/ HTTP/1.1" 302 0
+"GET /admin/food/animalnutrient/ HTTP/1.1" 200 5234
+"GET /admin/jsi18n/ HTTP/1.1" 200 3217
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /admin/food/animalnutrient/add/ HTTP/1.1" 200 7374
+"GET /admin/jsi18n/ HTTP/1.1" 200 3217
+"POST /admin/food/animalnutrient/add/ HTTP/1.1" 302 0
+"GET /admin/food/animalnutrient/ HTTP/1.1" 200 5493
+"GET /admin/jsi18n/ HTTP/1.1" 200 3217
+"GET /admin/food/animalnutrient/add/ HTTP/1.1" 200 7374
+"GET /admin/jsi18n/ HTTP/1.1" 200 3217
+"POST /admin/food/animalnutrient/add/ HTTP/1.1" 302 0
+"GET /admin/food/animalnutrient/ HTTP/1.1" 200 5739
+"GET /admin/jsi18n/ HTTP/1.1" 200 3217
+"GET /admin/food/animalnutrient/add/ HTTP/1.1" 200 7374
+"GET /admin/jsi18n/ HTTP/1.1" 200 3217
+"POST /admin/food/animalnutrient/add/ HTTP/1.1" 302 0
+"GET /admin/food/animalnutrient/ HTTP/1.1" 200 5997
+"GET /admin/jsi18n/ HTTP/1.1" 200 3217
+"GET /admin/food/animalnutrient/add/ HTTP/1.1" 200 7374
+"GET /admin/jsi18n/ HTTP/1.1" 200 3217
+"POST /admin/food/animalnutrient/add/ HTTP/1.1" 302 0
+"GET /admin/food/animalnutrient/ HTTP/1.1" 200 6237
+"GET /admin/jsi18n/ HTTP/1.1" 200 3217
+"GET /admin/food/animalnutrient/2/change/ HTTP/1.1" 200 7636
+"GET /admin/jsi18n/ HTTP/1.1" 200 3217
+"GET /admin/food/animalnutrient/ HTTP/1.1" 200 6022
+"GET /admin/food/animalnutrient/add/ HTTP/1.1" 200 7374
+"GET /admin/jsi18n/ HTTP/1.1" 200 3217
+"POST /admin/food/animalnutrient/add/ HTTP/1.1" 302 0
+"GET /admin/food/animalnutrient/ HTTP/1.1" 200 6480
+"GET /admin/jsi18n/ HTTP/1.1" 200 3217
+"GET /food/ HTTP/1.1" 200 3641
+Internal Server Error: /food/
+Traceback (most recent call last):
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/backends/django.py", line 64, in render
+    context = make_context(context, request, autoescape=self.backend.engine.autoescape)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/template/context.py", line 287, in make_context
+    raise TypeError('context must be a dict rather than %s.' % context.__class__.__name__)
+TypeError: context must be a dict rather than list.
+"GET /food/ HTTP/1.1" 500 84091
+Internal Server Error: /food/
+Traceback (most recent call last):
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/cathy/.local/lib/python2.7/site-packages/django/views/generic/list.py", line 175, in get
+    context = self.get_context_data()
+  File "/home/cathy/myPythonProj/MyVirEnv/mysite/food/views.py", line 25, in get_context_data
+    return dict([x for x in range(5)])
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+"GET /food/ HTTP/1.1" 500 85191
+"GET /food/ HTTP/1.1" 200 624
